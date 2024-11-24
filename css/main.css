@@ -123,7 +123,7 @@ img{
 .navUl,.followdarlington{
   display : flex;
   width : 100%;
-  font-size : 4rem;
+  font-size : 7rem;
   margin : auto;
   padding-left : 4rem;
   
@@ -228,7 +228,18 @@ img{
   position : relative ;
   left : 0;
 }
-
+.aboutparagraph1{
+  color : var(--primary-color);
+  font-size : 3rem;
+  width : auto;
+  text-align : center; 
+  border-radius : 12rem;
+  margin : 4rem auto;
+  display : inline-block;
+  position : relative ;
+  left : 0;
+}
+  
 .contact{
   margin :0;
   padding: 0;
