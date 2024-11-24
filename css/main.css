@@ -120,7 +120,7 @@ img{
 }
 
 
-.navUl,.followdarlington{
+.navUl{
   display : flex;
   width : 100%;
   font-size : 4rem;
@@ -128,9 +128,16 @@ img{
   padding-left : 4rem;
   
 }
+.followdarlington{
+  display : flex;
+  width : 100%;
+  font-size : 4rem;
+  margin : auto;
+  padding-left : 4rem;
+}
 
 .followdarlington li{
-  font-size: 12rem;
+  font-size: 26rem;
   margin:0 2rem 5rem 2rem;
 }
 .navlinks a{
