@@ -1,0 +1,477 @@
+/* ////////GLOBAL STYLES/////// */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  width : 100%;
+  height: 100%;
+  font-size : 10px;
+  --background-color : #BF946B;
+  --primary-color : #FFF2DE;
+  --white-color : white;
+  --buttonHover-color : #FFC080;
+  --whatsapp-color : green;
+}
+
+.bodytag {
+  font-family : 'Open Sans', sans-serif;
+  background-color : var(--background-color);
+  background-image : url(../img/Brownbackground.png);
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size :   cover;
+  
+  width : 100%;
+  height : 100%;
+}
+
+
+a{
+  text-decoration : none;
+}
+
+h2{
+   color : var(--primary-color) !important;
+   font-size : 4.7rem !important; 
+   word-spacing : 0rem;
+   padding: 1rem !important;
+}
+
+span {
+  font-family: 'Libre Baskerville', cursive;
+  font-size: 4rem;
+  margin :0.5rem auto; 
+  color: var(--primary-color);
+}
+
+.button{
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border: none;
+  padding: 6rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: var(--buttonHover-color);
+}
+
+.button:active {
+  background-color: var(--buttonHover-color);
+  transform: scale(0.8);
+}
+
+.button:focus {
+  outline: none;
+}
+
+p{
+  font-size: 3rem;
+  color : var(--primary-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+img{
+  display : block; 
+  width : 80%;
+  height : 110rem; 
+  margin : auto;
+  padding : auto;
+  border: 0.5rem solid var(--primary-color);
+  border-radius : 1rem;
+  
+}
+
+/* ////////HEADER AND NAVS /////// */
+
+.header{
+  width : 65%;
+  height: 60px;
+}
+
+.nav{
+  display : inline-block;
+  width : 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.breednavv{
+  position : relative;
+  top : 650%;
+}
+
+.logo{
+  height : 30rem;
+  width : 30rem;
+  position : relative;
+  left : 50%;
+  margin-bottom : 5rem;
+}
+
+
+.navUl,.followdarlington{
+  display : flex;
+  width : 100%;
+  font-size : 4rem;
+  margin : auto;
+  padding-left : 4rem;
+  
+}
+
+.followdarlington li{
+  font-size: 12rem;
+  margin:0 2rem 5rem 2rem;
+}
+.navlinks a{
+  text-decoration : none;
+  margin-right :0rem;
+  color : var(--primary-color);
+  line-height : 5rem; 
+}
+
+
+
+/* ////////MAIN ELEMENTS /////// */
+.h1,.h1 a{
+   color : var(--primary-color) !important;
+   position : relative;
+   left : 65%;
+   top : 2%;
+   font-size : 5rem !important; 
+   word-spacing : 0rem; 
+   width : 30%;
+   text-decoration : none;
+   padding: 1rem !important; 
+   
+}
+
+
+.mainElement{
+  position : relative; 
+  top : 50rem;
+  width : 90%;
+  margin : 0 auto; 
+  left : 4%;  
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items :   center;
+}
+
+.Dog-image-of-the-day,
+.randomDogImage,.profile{
+  display : block; 
+  width : 100%;
+  aspect-ratio: 16/9;
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 1rem;
+  margin : 2rem auto;
+}
+
+.profile{
+  width : 90%;
+}
+
+.randomDogFactsContainer{
+  display : flex; 
+  width : 100%;
+  margin : 20rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.paragraphheading{
+  border : 0.6rem solid var(--primary-color);
+  width : auto;
+  height : 15%;
+  border-radius : 5rem;
+  transform : rotate(-90deg);
+  position : relative;
+  left : -12%;
+  white-space : nowrap;
+  flex-grow : 1; 
+}
+
+.paragraph{
+  color : var(--primary-color);
+  font-size : 6rem;
+  width : auto;
+  height : 80%;
+  text-align : center; 
+  border-radius : 12rem;
+  margin : 2rem auto;
+  display : inline-block;
+  position : relative ;
+  left : -10%;
+}
+
+.aboutparagraph{
+  color : var(--primary-color);
+  font-size : 4rem;
+  width : auto;
+  text-align : center; 
+  border-radius : 12rem;
+  margin : 4rem auto;
+  display : inline-block;
+  position : relative ;
+  left : 0;
+}
+
+.contact{
+  margin :0;
+  padding: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+.downloadandshare{
+  display : flex;
+  justify-content: center;
+}
+
+
+.generaterandomimagebtn {
+  margin : 4rem; 
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  background: linear-gradient(to bottom,var(--background-color), var(--buttonHover-color));
+  padding: 2rem 4rem;
+  border : none; 
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: all 1s;
+  box-shadow: 1rem 1rem 1.8rem rgba(0,0,0,0.7);
+}
+
+
+.generaterandomimagebtn:active {
+  background: linear-gradient(to top, #BF946B, #FFC080);
+  transform: scale(0.8);
+}
+
+.generaterandomimagebtn:focus {
+  outline: none;
+}
+
+.favouritePhotosContainerwrap,.breed-photo-container{
+  display : flex; 
+  flex-direction : column;
+  align-items : center;
+  width : 100%;
+  aspect-ratio: 16/9;
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 5rem;
+  margin : 2rem auto;
+}
+
+.favouritePhotosContainer{
+  display : flex; 
+  flex-direction : column;
+  align-items : center;
+  width : 100%;
+  min-height : 150rem; 
+  aspect-ratio: 16/9;
+  margin : 2rem auto;
+  overflow : auto;
+}
+
+
+.favouritePhotosContainerwrap h2{
+   color : var(--primary-color) !important;
+   font-size : 4.7rem !important; 
+   word-spacing : 0rem;
+   padding: 1rem !important;
+   text-align : left;
+   align-self : flex-start;
+   width : 100%;
+}
+  
+
+
+.NOLIKEDPHOTO{
+  justify-self : center; 
+  text-align : center;
+  flex-grow : 1; 
+}
+
+
+
+.centered-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top : auto;
+}
+
+
+.breedSelectionparagraph{
+  color : var(--primary-color);
+  font-size : 3rem;
+  width : auto;
+  height : 60%;
+  text-align : center; 
+  border-radius : 10rem;
+  margin : 12rem auto;
+}
+
+
+.breedImgcontainer{
+  margin : 4rem 0;
+}
+
+
+
+.breed-selection-container {
+  position: relative;
+  left : 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10rem auto;
+  padding: 5rem;
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 5rem;
+  background-color: var(--background-color);
+}
+
+.breed-selection-container h2 {
+  font-size: 4.7rem;
+  padding: 1rem;
+  margin: 20rem auto;
+}
+
+.breedSelectionparagraph {
+  display: flex;
+  flex-direction: center;
+  justify-content: center!important;
+  margin-bottom: 5rem;
+  text-align : center; 
+}
+
+.breedSelectionparagraph label {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.breedSelectionparagraph select {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.breed-info-container{
+  display : flex; 
+  width : 100%;
+  margin : 10rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.breedinfoparagraph{
+  color : var(--primary-color);
+  width : auto;
+  height : 70%;
+  text-align : center; 
+  border-radius : 12rem;
+  margin : 2rem auto;
+  display : inline-block;
+  position : relative ;
+  left : -15%;
+}
+
+
+.breedinfoparagraphheading{
+  border : 0.6rem solid var(--primary-color);
+  width : auto;
+  height : 10%;
+  border-radius : 5rem;
+  transform : rotate(-90deg);
+  position : relative;
+  left : -12%;
+  white-space : nowrap;
+  flex-grow : 1; 
+  margin : 2rem auto;
+  font-size : 12rem;
+}
+
+
+.breedImgcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.breedImgcontainer img {
+  width: 40%;
+  height: 30rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1.8rem rgba(0, 0, 0, 0.7);
+}
+
+
+
+.whatsapp-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: var(--background-color);
+  border-radius: 5rem;
+  margin-top: 10rem;
+}
+
+.whatsapp-contact p {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.whatsapp-contact a {
+  font-size: 4rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.whatsapp-contact a:hover {
+  color: var(--whatsapp-color);
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: var(--background-color);
+  border-radius: 5rem;
+  margin-top: 10rem;
+}
+
+.footer-content pre {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--primary-color);
+
+}
+
+

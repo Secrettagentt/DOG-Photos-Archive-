@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	    	<!-- Head section -->
+	    	
+     <meta name="description" content="Explore our vast collection of dog photos and learn interesting facts about different breeds. Download, share, and favorite your loved ones!">
+     <meta name="keywords" content="dog photos, dog breeds, dog facts, animal pictures, pet gallery, dog lovers">
+	    	<meta property="og:title" content="DOG PHOTO ARCHIVE">
+     <meta property="og:description" content="Explore our vast collection of dog photos and learn interesting facts about different breeds.">
+     <meta property="og:image" content="logo">
+	    	
+		<title>DOG PHOTO ARCHIVE</title>
+	    	
+	    	<!-- EXTERNAL FONTS LINKS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">  	
+	    	
+	    	
+	    	<!-- EXTERNAL CSS LINKS  -->
+	  <link rel="stylesheet" href="css/reset.css">  	
+	  	<link rel="stylesheet" href="css/normalize.css">
+		  <link rel="stylesheet" href="css/stle.css">
+	   <link rel="stylesheet" href="css/main.css">
+	   <link rel="stylesheet" href="alertifyjs/css/alertify.min.css">
+	   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/fonts.css">
+	    	
+   	
+	</head>
+
+
+         <!-- BODY -->
+
+
+	<body class="bodytag">
+	    	
+	    	<!--  HEADER   -->
+	    	
+	    	
+	    	<header class="header">
+	    	    	<nav class="nav">
+	    	    	    	
+	    	    	    	<a href="index.html" ><img src="img/logo.png" id="logo" class="logo"></a>
+	    	    	    	 	<ul class="pacifico-regular navUl">
+	    	    	    	    	<li class="navlinks"><a href="index.html"> Archive |</a></li>
+	    	    	         <li class="navlinks"><a href="#favouritePhotosContainerwrap">Favourite Photos |</a></li>
+	    	    	    	
+	    	    	    	 	    	<li class="navlinks"><a href="about.html">About</a></li
+	    	    	    	</ul>
+	    	    	    	
+	    	    	</nav>
+	    	    	    	
+	    	    	    <nav class="breednavv nav">
+	    	    	    		    	    	 
+	    	    	    	 	<ul class="pacifico-regular navUl">
+	    	    	    	 	    	    	    	    	 	    	    	    	    	 	    	
+	    	    	     	<li class="navlinks"><a href="#breednav">Select Image by Breed </a></li>
+	 
+	    	    	    	</ul>
+	    	    	</nav>
+	    	</header>
+	    	
+	    	<!--   MAIN ELEMENTS  -->
+	    	
+	    <h1 class="cinzel-decorative-black h1"><a href="index.html">DOG PHOTOS ARCHIVE</a></h1> 	
+	
+	    	
+	    	<main class="mainElement">
+	    	
+	    	
+	    	<!-- DOG IMAGE OF THE DAY -->
+	    	
+	   	    	
+	    	<section class="Dog-image-of-the-day">
+	    	    	
+	    	    	<!-- HTML -->
+	    	    	<h2 class="cinzel-decorative-bold">DOG IMAGE OF THE DAY</h2>
+
+	    	    		<img id="randomDogImageoftheday" src="" alt="">
+	    	<span id="randomDogImageofthedayspan"></span>
+	    	
+	    	    	<section class="downloadandshare">
+	    	    	    		<button id="imageOfTheDayviewBtn" class="button view-btn" onclick="fullScreenDogImageView(dogOfTheDayImage.src)">Full screen</button>
+	    	    	    	
+	    	    	    	<button id="imageOfTheDayDownloadBtn" class="button download-btn" onclick="downloadDogImage(dogOfTheDayImage.src)">Download Image </button>
+	    	    	    	
+	    	    	    		<button id="imageOfTheDayShareBtn" class="button share-btn" onclick="shareDogImage(dogOfTheDayImage.src,'Dog Image of the day','checkout this adorable dog!')">Share Image</button>
+	    	    	    	
+	    	    	    	<button id="imageOfTheDayLikeBtn" class="button like-btn" onclick="LikeDogImage(dogOfTheDayImage.src, imageOfTheDayLikeBtn, 'DogOfTheDay');">Like</button>
+	    	    	    	
+	    	    	</section>
+	    	</section>
+	    	    	
+	    	    		    	
+	    	    		    	
+	    	    		    	
+	    	    		    	 	<!-- RANDOM DOG FACTS -->
+	    	
+	   <section class="randomDogFactsContainer">
+      <h2 class="paragraphheading cinzel-decorative-bold" id="dogFactsHeading">DOG FACTS</h2>
+      <p class="paragraph randomDogFacts merriweather-bold-italic" id="randomDogFacts" aria-labelledby="dogFactsHeading"></p>
+   </section>
+
+	    	    		    	
+	    	    		    	
+	    	<!-- RANDOM DOG IMAGES -->
+	    	    	
+	    	    
+	    	<section class="randomDogImage">
+	    	    		<h2 class="cinzel-decorative-bold">RANDOM DOG IMAGE</h2>
+	    	
+	    	    	<button id="getRandomDogImage" class="generaterandomimagebtn"
+onclick="getRandomDogImage()">GENERATE RANDOM DOG IMAGE</button>
+	    	    	
+	    	    	
+	    	    		<img id="randomDogImage" src="" alt="">
+	    	<span id="randomDogImagespan"></span>
+	    	
+	    	    	<section class="downloadandshare">
+	    	    	    		<button id="randomDogImageViewBtn" class="button view-btn" onclick="fullScreenDogImageView(randomDogImage.src)">Full screen</button>
+	    	    	    	
+	    	    	    	<button id="randomDogImageDownloadBtn" class="button download-btn" onclick="downloadDogImage(randomDogImage.src)">Download Image </button>
+	    	    	    	
+	    	    	    		<button id="randomDogImageShareBtn" class="button share-btn" onclick="shareDogImage(randomDogImage.src,'Dog Image','checkout this adorable dog!')">Share Image</button>
+	    	    	    	
+	    	    	    	
+	    	    	    	 	<button id="randomDogImageLikeBtn" class="button like-btn" onclick="LikeDogImage(randomDogImage.src, randomDogImageLikeBtn, 'randomDogImage')">Like</button>
+	    	    	    	
+	    	    	</section>
+	    	    	
+	    	</section>
+	    	    	
+	    <!-- LIKED DOG PHOTOS -->
+	    	
+	    	    	
+	    	<section id="favouritePhotosContainerwrap" class="favouritePhotosContainerwrap">
+	    	    		
+	    	    	<h2 class="cinzel-decorative-bold">FAVOURITE PHOTOS</h2>
+	    	    	
+	    	    	<span id="numberOfLikedImages" class="breedspan"></span> <br>
+	    	    	 
+	    	    	<section id="favouritePhotosContainer" class="favouritePhotosContainer">
+	    	    		
+	    	    	    	
+	         	</section>
+	    	    	
+	    	</section>
+	   
+	    	    	
+	    	    	
+	    	<!-- DOG IMAGE BASED ON BREED SELECTED -->
+	    	
+	    	<h2 id="breednav" class="cinzel-decorative-bold">SELECT DOG BREED</h2>
+	    	<p class="merriweather-black-italic breed-paragraph"> Do you have a particular breed in mind? select below to see photos</p>
+	    
+	    	<section class="paragraph breedSelectionparagraph breedselection">
+	    	    	
+	    	<label class="merriweather-black" for="breedSelect">	SELECT A BREED :</label>
+	    	<select class="merriweather-black-italic" name="breedSelect" id="breedSelect" onchange="displayBreedImages()">	</select>
+	    	    	
+	    	</section>
+	    	
+	    	
+	
+	    	    	<section id="breed-container" class="breed-container">
+	    	    	
+	    	    	 <!-- Breed Information Container -->
+<section id="breed-info-container"
+class="breed-info-container">
+    	 
+</section>
+	    	    	    	
+	    	    	    	  	<span id="numberOfBreedImages"
+	    	    	    	class="breedspan"></span> <br>
+	    	    	    	
+	    	    	    	 	<span id="breedspan"
+	    	    	    	class="breedspan"></span>
+
+<!-- Breed Photos Container -->
+	    	    		<section id="breed-photo-container"
+	class="breed-photo-container"> 	
+	    	    		    	
+	    	    		    	
+	    	    		</section>  
+	    	    	    
+	    	   
+	    	    	    	
+	    	</section>  	
+	    	    	
+
+	    	    	<!-- WhatsApp contact information -->
+<section class="whatsapp-contact">
+  <div class="cinzel-decorative-regular container">
+    <p>Need help or have questions?</p>
+    <p>Click to chat with us on WhatsApp: <a href="https://wa.me/09040490062" target="_blank">+2349040490062</a></p>
+    </div>
+</section>
+	    	    	
+	    	
+	    	
+	    	
+	    	    	
+	    	    	<!-- FOOTER -->
+	    	    	
+<footer class="footer">
+  <div class="footer-content">
+    <pre>&copy; Darlington 2024 DOG PHOTO ARCHIVE.
+    All rights reserved.</pre>   	
+  </div>
+</footer>
+
+
+<!-- Before closing </body> tag -->
+	    	   
+	    	    	
+<script src="alertifyjs/alertify.min.js"></script>
+	    	    	
+	    	
+<script type="text/javascript" src="js/main.js"></script>
+	    	    	
+<script type="text/javascript" src="js/css.js"></script>
+	    	    	
+	    	    	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	    	   
+	    	    	
+	</body>
+</html>
